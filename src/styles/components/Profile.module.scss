@@ -1,6 +1,7 @@
 .profileContainer {
   display: flex;
   align-items: center;
+  position: relative;
 
   & > img {
     width: 5.5rem;
@@ -23,6 +24,22 @@
       img {
         margin-right: 0.5rem;
       }
+    }
+  }
+
+  .switch {
+    position: absolute;
+    right: 2px;
+
+    span {
+      position: relative;
+      display: inline-block;
+
+      height: 1.75em;
+      width: 2.975em;
+      border-radius: 1.75em;
+
+      background: #b7bbc8;
     }
   }
 }

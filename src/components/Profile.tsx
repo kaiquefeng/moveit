@@ -10,6 +10,13 @@ export function Profile() {
           Level 1
         </p>
       </div>
+
+      <div className={styles.switch}>
+        <span>
+          <input type="checkbox"/>
+          <label htmlFor="check"></label>
+        </span>
+      </div>
     </div>
   )
 }
