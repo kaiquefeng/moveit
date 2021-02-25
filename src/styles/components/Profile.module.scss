@@ -35,7 +35,7 @@
       position: relative;
       display: inline-block;
 
-      height: 1.75em;
+      height: 1.45em;
       width: 2.975em;
       border-radius: 1.75em;
 
@@ -53,18 +53,6 @@
         position: relative;
 
         &:before {
-          background: var(--gray-line);
-
-          position: absolute;
-          content: '';
-          top: 0;
-          left: 0;
-          height: 1.75em;
-          border-radius: inherit;
-          -webkit-transition: all 0.2s;
-          transition: all 0.2s;
-        }
-        &:after {
           background: var(--white);
 
           position: absolute;
@@ -79,7 +67,7 @@
           -webkit-transition: all 0.2s;
           transition: all 0.2s;
 
-          transform: translatey(-5%);
+          transform: translatey(-15%);
         }
       }
     }

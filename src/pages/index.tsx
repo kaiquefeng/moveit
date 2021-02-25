@@ -7,6 +7,7 @@ import { Profile } from "../components/Profile";
 import { ChallengeBox } from "../components/ChallengeBox";
 
 import styles from '../styles/pages/Home.module.scss'
+import { CountDownProvider } from '../context/CountDownContext';
 
 export default function Home() {
   return (
@@ -16,16 +17,18 @@ export default function Home() {
         <title>Início | Move.it</title>
       </Head>
 
-      <section>
-        <div>
-          <Profile />
-          <CompletedChallenges />
-          <CountDown />
-        </div>
-        <div>
-          <ChallengeBox />
-        </div>
-      </section>
+      <CountDownProvider>
+        <section>
+          <div>
+            <Profile />
+            <CompletedChallenges />
+            <CountDown />
+          </div>
+          <div>
+            <ChallengeBox />
+          </div>
+        </section>
+      </CountDownProvider>
    </div>
   )
 }
