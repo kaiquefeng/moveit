@@ -11,7 +11,13 @@ import styles from '../styles/pages/Home.module.scss'
 import { CountDownProvider } from '../context/CountDownContext';
 import { ChallengesProvider } from '../context/ChallengeContext';
 
-export default function Home(props) {
+interface HomeProps {
+  level: number,
+  currentExperience: number,
+  challengesCompleted: number
+}
+
+export default function Home(props: HomeProps) {
   console.log(props)
   return (
     <ChallengesProvider 
