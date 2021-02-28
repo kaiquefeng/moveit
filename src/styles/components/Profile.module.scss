@@ -9,7 +9,7 @@
     border-radius: 50%;
   }
 
-  div {
+  & > div {
     margin-left: 1.5rem;
 
     strong {
@@ -31,45 +31,43 @@
     position: absolute;
     right: 2px;
 
-    span {
-      position: relative;
-      display: inline-block;
+    // span {
+    //   position: relative;
+    //   display: inline-block;
 
-      height: 1.45em;
-      width: 2.975em;
-      border-radius: 1.75em;
+    //   height: 1.45em;
+    //   width: 2.975em;
+    //   border-radius: 1.75em;
 
-      background: var(--gray-line);
+    //   background: var(--gray-line);
 
-      vertical-align: middle;
+    //   vertical-align: middle;
 
-      input {
-        display: none;
-      }
-      label {
-        width: 100%;
-        height: 100%;
-        border-radius: 1.75em;
-        position: relative;
+    //   input {
+    //     display: none;
+    //   }
+    //   label {
+    //     background: var(--white);
 
-        &:before {
-          background: var(--white);
+    //     position: absolute;
+    //     content: '';
+    //     top: 0;
+    //     left: 0;
+    //     cursor: pointer;
 
-          position: absolute;
-          content: '';
-          top: 0;
-          left: 0;
+    //     height: 1.95rem;
+    //     width: 1.95rem;
+        
+    //     border-radius: inherit;
+    //     -webkit-transition: all 0.2s;
+    //     transition: all 0.2s;
 
-          height: 1.95rem;
-          width: 1.95rem;
-          
-          border-radius: inherit;
-          -webkit-transition: all 0.2s;
-          transition: all 0.2s;
+    //     transform: translatey(-15%);
 
-          transform: translatey(-15%);
-        }
-      }
+    //   }
+    // }
+    #checked {
+      background: var(--purple);
     }
   }
 }
