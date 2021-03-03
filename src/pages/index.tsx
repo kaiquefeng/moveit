@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { registerServiceWorker } from './serviceWorker'
 import { GetServerSideProps } from 'next'
 
 import { CompletedChallenges } from "../components/CompletedChallenges";
@@ -19,6 +20,7 @@ interface HomeProps {
 
 export default function Home(props: HomeProps) {
   console.log(props)
+  registerServiceWorker();
   return (
     <ChallengesProvider 
       level={props.level}
